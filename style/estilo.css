@@ -10,23 +10,24 @@ body {
 .header{
     width: 1920px;
     height: 80px;
-    
     justify-content: space-between;
-    color: #fff;  
+    color: #fff; 
+    border-bottom: #404040 2px solid
 }
+    
 .logo {
     width: 83px;
     height: 22.21px;
     margin-left: 323px;
     margin-top: 29px;
 }
-.nave{
+.nav{
     justify-content: space-between;
     display: flex;
     
 }
 
-.nave ul{
+.nav ul{
     list-style: none;
     display: flex;
     gap: 32px; 
@@ -138,25 +139,36 @@ body {
 }
 
 .footer{
+    width:1917px;
+    height: 281px;
     background-color: #fff;
     color: #000;  
-    margin-top: 55px;  
+    margin-top: 55px; 
+    box-sizing: border-box; 
+}
+hr{
+    width: 1310px;
 }
 .content{
     width: 1310px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-  
+    flex-direction: column; 
+    justify-content: center;
+    margin: 0 auto;
 }
-
-.content2{
+.content p{
+    text-align: center;
+}
+.content img{
+    margin-top: 48px;
+}
+.direitos{
+    width: 100%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
-.content3{
+.direitos2{
     display: flex;
-    text-align: left;
-    
+    flex-direction: row;
 }
-
