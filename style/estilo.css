@@ -5,33 +5,40 @@ body {
 }
 .container{
     color: #fff;
-
 }
 .header{
-    width: 1920px;
     height: 80px;
+    color: #fff;
+    border-bottom: #404040 2px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-container{
+    width: 1278px;
+    display: flex;
+    align-items: center;   
     justify-content: space-between;
-    color: #fff; 
-    border-bottom: #404040 2px solid
+    
 }
     
 .logo {
-    width: 83px;
     height: 22.21px;
-    margin-left: 323px;
-    margin-top: 29px;
 }
 .nav{
-    justify-content: space-between;
+    align-items: center;  
+    width: min-content;
+    flex-direction: row;
     display: flex;
-    
 }
 
 .nav ul{
     list-style: none;
-    display: flex;
-    gap: 32px; 
-    
+    display: flex;  
+    align-items: center; 
+}
+.nav li{
+    margin-right: 20px;
 }
 .button1{
     border-radius: 10px;
@@ -43,12 +50,12 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    width: 106px;
 }
 .main{
     align-items: center;
     display: flex;
     flex-direction: column;
+    
 
 }
 .section1{
@@ -58,6 +65,7 @@ body {
     justify-content: space-between;
     flex-direction: row-reverse;
     margin-top: 152px;
+    box-sizing: border-box;
 }
 .h2{
     font-style: italic;
@@ -72,7 +80,6 @@ body {
     width: 850px;
 }
 .section1-content{
-    display: flex;
     flex-direction: column;
     width: 365px;
     height: 230px;
@@ -84,27 +91,28 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 64px;
-    
+    box-sizing: border-box;  
+}
+.section2 p{
+    font-weight: 300;
 }
 .section2-content{
-    display: flex;
-    flex-direction: column; 
+    
+    
     width: 636px;
     height: 182px;
-    justify-content: center;
+    
     font-weight: 300;   
-    font-size: 20px;
 }
-.botton2{
-    width: 172px;
-    height: 52px;
+.button2{
+    padding: 16px 43px;
     border: #fff solid 1px;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
+    box-sizing: border-box;
+    background-color: #000;
 }
 .section3{
     background: linear-gradient(to right, #91282f, #330002);
@@ -115,20 +123,21 @@ body {
     flex-direction: row-reverse; 
     justify-content: space-between; 
     padding: 62px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     margin-top: 64px;
-   
-
+    margin: 0;  
 }
 .section3 h2{
     width: 426px;
     height: 86px;
     margin: 0;
+    font-weight: 600;
 }
 .section3 p{
     width: 396px;
     height: 55px;
     margin: 0;
+    color: #C4C4C4;
 }
 .section3 .botton2{
     background-color: #000;
@@ -139,7 +148,7 @@ body {
 }
 
 .footer{
-    width:1917px;
+    width:100%;
     height: 281px;
     background-color: #fff;
     color: #000;  
@@ -171,4 +180,59 @@ hr{
 .direitos2{
     display: flex;
     flex-direction: row;
+}
+@media screen and (max-width: 720px){
+
+    .header-container{
+        flex-direction: column;
+        width: 719px;
+        
+    }
+    .section1{
+        flex-direction: column;
+        width: 600px;
+    }
+    .section1-content{
+        width: 500px;
+     
+    }
+    .img1{
+        width: 500px;
+    }
+    .section2{
+        flex-direction: column;
+        height: 430px;
+        align-items: center;
+        text-align:left;
+        width: 600px;   
+    }
+    .section2-content{
+        width: 600px;
+    }
+    .img2{
+        width: 430px;
+    }
+    .section3{
+        flex-direction: column;
+        width: 600px;
+        height: 480px;
+        align-items: center;
+        background: linear-gradient(to top, #91282f, #330002);
+    }
+    .section3-content{
+        width: 600px;
+        
+    }
+    .img3{
+        width: 400px;
+    }
+    .content{
+        width: 600px;
+        flex-direction: column;
+        height: 550px;
+    }
+    .content hr{
+        width: 100%;
+    }
+    
 }
